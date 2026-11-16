@@ -15,6 +15,7 @@ which is also licensed under the MIT license.
 | --------------- | ------------------------------------------------------------ |
 | `MinimalLayout` | CSS Reset + HTML Skeleton                                    |
 | `BaseLayout`    | `MinimalLayout` + cM Fonts + Dark Mode                       |
+| `Header`        | Slotted branding and navigation, stacked or inline           |
 | `Footer`        | Copyright &copy; `{start}`-`{end}` `{rightsholder}`          |
 | `Button`        | Buttons and links, with default, primary and danger variants |
 | `Dialog`        | Native dialog with a buttons slot                            |
