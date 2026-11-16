@@ -7,6 +7,7 @@ import Button from "./src/Button.astro";
 import Dialog from "./src/Dialog.astro";
 import Tabs from "./src/Tabs.astro";
 import LinkCard from "./src/LinkCard.astro";
+import Accordion from "./src/Accordion.astro";
 import cmLogoPng from "./src/assets/cm-logo.png";
 import cmLogoSvg from "./src/assets/cm-logo.svg";
 import fgLogoPng from "./src/assets/fg-logo.png";
@@ -22,6 +23,7 @@ export {
     Dialog,
     Tabs,
     LinkCard,
+    Accordion,
     cmLogoPng,
     cmLogoSvg,
     fgLogoPng,

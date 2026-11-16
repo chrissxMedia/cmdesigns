@@ -5,6 +5,10 @@ An attempt at putting common chrissx Media design elements into a library.
 The code is MIT licensed, but usage of `CMText`, `FGText`, etc is a trademark
 violation.
 
+Some components are adapted from
+[CloudCannon's Astro Component Starter](https://github.com/CloudCannon/astro-component-starter),
+which is also licensed under the MIT license.
+
 ## Components
 
 | Name            | Description                                                  |
@@ -16,6 +20,7 @@ violation.
 | `Dialog`        | Native dialog with a buttons slot                            |
 | `Tabs`          | Segmented radio selector                                     |
 | `LinkCard`      | Slotted link card                                            |
+| `Accordion`     | Native disclosure with a title, slotted content, and chevron |
 | `CMText`        | ⚠️ not for external use (chrissx Media trademark)            |
 | `FGText`        | ⚠️ not for external use (Fux Games trademark)                |
 
