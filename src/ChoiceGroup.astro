@@ -78,11 +78,11 @@ const { label, name, type = "radio", options, form, ...attributes } = Astro.prop
         clip-path: polygon(25% 0, 75% 0, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0 75%, 0 25%);
     }
     input:checked + span::before {
-        background: rgb(var(--cmpurple));
-        border-color: rgb(var(--cmpurple));
+        background: var(--accent);
+        border-color: var(--accent);
     }
     input:focus-visible + span {
-        outline: 2px solid rgb(var(--cmpurple));
+        outline: 2px solid var(--accent);
         outline-offset: 3px;
     }
     label:has(input:disabled) {
