@@ -1,3 +1,6 @@
+:where(:root) {
+    --accent: rgb(var(--cmpurple));
+}
 :where(body) {
     font-family: var(--unifont);
     color: white;

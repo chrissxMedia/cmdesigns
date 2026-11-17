@@ -32,6 +32,28 @@ which is also licensed under the MIT license.
 | `CMText`        | ⚠️ not for external use (chrissx Media trademark)            |
 | `FGText`        | ⚠️ not for external use (Fux Games trademark)                |
 
+## Accent color
+
+`BaseLayout` defaults `--accent` to CMPurple. Set the variable to a CSS color in
+a global stylesheet for the whole site, or on a container to theme its
+descendants:
+
+```css
+:root {
+    --accent: rgb(var(--fgorange));
+    --accent-foreground: black;
+}
+```
+
+Set `--accent` yourself when using components without `BaseLayout`. Choose a
+color that contrasts with the page background so focus outlines and checked
+states stay visible.
+
+`--accent-foreground` is optional. It sets the text on primary buttons and the
+thumb on enabled, checked switches. By default browsers with `contrast-color()`
+choose black or white automatically. Older browsers use white, so set
+`--accent-foreground` for a light accent if those browsers need support.
+
 ## Build commit
 
 ```js

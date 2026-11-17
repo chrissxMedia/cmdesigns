@@ -80,7 +80,7 @@ const position = (value: number) => maximum > minimum
 <style>
     [data-cm-range] {
         /* TODO: Check thumb and label contrast when light themes are supported. */
-        --fill: rgb(var(--cmpurple));
+        --fill: var(--accent);
         --empty: #666;
         --thumb: white;
         margin: 0.55em 0;
@@ -169,7 +169,7 @@ const position = (value: number) => maximum > minimum
         background: var(--thumb-shape), var(--track) center / 100% var(--bar-height) no-repeat;
     }
     input:focus-visible {
-        outline: 2px solid rgb(var(--cmpurple));
+        outline: 2px solid var(--accent);
         outline-offset: 3px;
         border-radius: 4px;
     }
