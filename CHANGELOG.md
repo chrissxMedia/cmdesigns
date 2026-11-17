@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.1.15, 2026-11-17
+
+- Add `Header` for stacked or inline branding and navigation, and `Accordion`
+  for native disclosure sections
+  ([#20](https://github.com/chrissxMedia/cmdesigns/pull/20)).
+- Add styled native form controls: `Field`, `Select`, `ChoiceGroup`, `Toggle`,
+  and `Range` ([#18](https://github.com/chrissxMedia/cmdesigns/pull/18)).
+- Support custom accent colors via `--accent`
+  ([#21](https://github.com/chrissxMedia/cmdesigns/pull/21)).
+
 ## 0.1.14, 2026-11-15
 
 - Add `Card` with configurable backgrounds and HTML elements. Keep `LinkCard` as
