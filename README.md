@@ -45,6 +45,10 @@ descendants:
 }
 ```
 
+Set `--accent` yourself when using components without `BaseLayout`. Choose a
+color that contrasts with the page background so focus outlines and checked
+states stay visible.
+
 `--accent-foreground` is optional. It sets the text on primary buttons and the
 thumb on enabled, checked switches. By default browsers with `contrast-color()`
 choose black or white automatically. Older browsers use white, so set
