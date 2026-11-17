@@ -12,6 +12,11 @@ import Card from "./src/Card.astro";
 import LinkCard from "./src/LinkCard.astro";
 import HCard from "./src/HCard.astro";
 import Accordion from "./src/Accordion.astro";
+import Field from "./src/Field.astro";
+import Select from "./src/Select.astro";
+import ChoiceGroup from "./src/ChoiceGroup.astro";
+import Toggle from "./src/Toggle.astro";
+import Range from "./src/Range.astro";
 import cmLogoPng from "./src/assets/cm-logo.png";
 import cmLogoSvg from "./src/assets/cm-logo.svg";
 import fgLogoPng from "./src/assets/fg-logo.png";
@@ -32,6 +37,11 @@ export {
     LinkCard,
     HCard,
     Accordion,
+    Field,
+    Select,
+    ChoiceGroup,
+    Toggle,
+    Range,
     cmLogoPng,
     cmLogoSvg,
     fgLogoPng,

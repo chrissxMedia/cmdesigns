@@ -1,0 +1,85 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+export type Props = {
+    id: string;
+    label: string;
+    hint?: string;
+    name: string;
+} & HTMLAttributes<"input">;
+
+const {
+    label,
+    hint,
+    name,
+    id,
+    "aria-describedby": describedBy,
+    ...input
+} = Astro.props;
+const hintId = `${id}-hint`;
+const description =
+    [describedBy, hint && hintId].filter(Boolean).join(" ") || undefined;
+---
+
+<div>
+    <label for={id}>{label}</label>
+    <span>
+        {Astro.slots.has("icon") && <span aria-hidden="true"><slot name="icon" /></span>}
+        <input {...input} {name} {id} aria-describedby={description} />
+    </span>
+    {hint && <small id={hintId}>{hint}</small>}
+</div>
+
+<style>
+    div {
+        margin: 0.55em 0;
+    }
+    div:has(input[hidden]) {
+        display: none;
+    }
+    div > span {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-top: 0.3em;
+    }
+    span > span {
+        position: absolute;
+        inset-inline-start: 0.6em;
+        display: flex;
+        pointer-events: none;
+    }
+    span > span :global(svg) {
+        width: 1em;
+        height: 1em;
+    }
+    span + input {
+        padding-inline-start: 2em;
+    }
+    input {
+        display: block;
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        padding: 0.5em 0.6em;
+        border: 1px solid #666;
+        border-radius: 4px;
+        background: transparent;
+        color: inherit;
+        font: inherit;
+    }
+    input:focus-visible {
+        outline: 2px solid rgb(var(--cmpurple));
+        outline-offset: 2px;
+    }
+    input:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+    small {
+        display: block;
+        font-size: 0.85rem;
+        color: #999;
+        margin: 0.2em 0 0;
+    }
+</style>

@@ -23,6 +23,11 @@ which is also licensed under the MIT license.
 | `Card`          | Slotted card with configurable background and element        |
 | `LinkCard`      | Compatibility wrapper for `Card`                             |
 | `HCard`         | Microformats profile with an optional Fediverse handle       |
+| `Field`         | Labelled input with an optional hint and icon slot           |
+| `Select`        | Styled native select                                         |
+| `ChoiceGroup`   | Radio buttons and checkboxes with pixel marks                |
+| `Toggle`        | Animated square switch                                       |
+| `Range`         | Slider with track height, diamond thumb and scale labels     |
 | `Accordion`     | Native disclosure with a title, slotted content, and chevron |
 | `CMText`        | ⚠️ not for external use (chrissx Media trademark)            |
 | `FGText`        | ⚠️ not for external use (Fux Games trademark)                |
